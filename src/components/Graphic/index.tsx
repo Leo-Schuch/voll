@@ -20,13 +20,13 @@ const SectionStyled = styled.section`
 `;
 
 function Graphic({ profissionais, consultas }: Props) {
-  let dados: Array<IData> = useGraphicData({ profissionais, consultas });
+  let data: Array<IData> = useGraphicData({ profissionais, consultas });
   return (
     <SectionStyled>
       <ResponsiveContainer width="100%" height={350}>
         <BarChart
           layout="vertical"
-          data={dados}
+          data={data}
           margin={{ top: 25, right: 40, left: 40, bottom: 20 }}
         >
           <XAxis type="number"></XAxis>
